@@ -13,4 +13,4 @@ function lastKNumbersSequance(n, k){
     console.log(result.join(` `));
     
 }
-lastKNumbersSequance(40, 3)
+lastKNumbersSequance(20, 2)
