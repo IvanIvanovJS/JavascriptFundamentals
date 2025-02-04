@@ -1,9 +1,10 @@
 
+let arr = [1,2,3,4,5]
 
-let arr = ['Isacc', 'Theodor', 'Jack', 'Harrison', 'George'];
+let sum = arr.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0,
+  );
 
-arr.sort((strA, strB) => strA.length - strB.length);
-console.log(arr);
 
-
-
+console.log(sum);
