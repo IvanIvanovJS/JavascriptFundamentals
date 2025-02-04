@@ -1,16 +1,4 @@
-function lastKNumbersSequance(n, k){
-    let result = [1];
-    while(result.length < n){
-        let sum = 0;
-        let lastKNums = result.slice(-k);
+arr = [`124`,`3`,`22`];
+let age = +arr[0];
+console.log(typeof age);
 
-        for( num of lastKNums){
-            sum += num;
-            
-        }
-        result.push(sum)
-    }
-    console.log(result.join(` `));
-    
-}
-lastKNumbersSequance(40, 3)
