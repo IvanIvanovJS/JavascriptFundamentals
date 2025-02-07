@@ -9,6 +9,7 @@ class Cat {
         
     }
 }
+
     for(let i = 0; i < arr.length; i++){
         let catInfo = arr[i]
             .split(` `);
@@ -20,6 +21,7 @@ class Cat {
         cat.meow();
     }
     
-
+    
 }
+
 cats(['Mellow 2', 'Tom 5'])
