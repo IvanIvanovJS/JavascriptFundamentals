@@ -6,13 +6,18 @@ class Storage{
     }
 
     addProduct(productObj){
-        this.storage.push(productObj).map(JSON.stringify);
-        this.capacity -= Number(productObj.quantity);
-        this.totalCost += +productObj.price * +productObj.quantity;
+        this.storage.push(productObj)
+        this.capacity -= Number(productObj.quantity)
+        this.totalCost += +productObj.price * +productObj.quantity
     }
     getProducts(){
-        console.log(this.storage);
-        
+        let result = [];
+        for(let productObj of this.storage){
+            let objAsJSON = JSON.stringify(productObj)
+            result.push(objAsJSON);
+            
+        }
+       return result = result.join(`\n`)
     }
 }
 
