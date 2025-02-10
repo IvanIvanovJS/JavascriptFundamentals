@@ -1,8 +1,3 @@
-let arr = [`test1`, `test2 test3`, `test4 test5`]
+let arr = [ '2C, 4H, 9H, AS, QS' ];
+console.log(arr[0]);
 
-for (const element of arr) {
-    if(element.includes(`test2`)){
-        console.log(`test3`);
-        
-    }
-}
