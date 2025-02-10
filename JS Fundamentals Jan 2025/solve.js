@@ -1,3 +1,8 @@
-let arr = [ '2C, 4H, 9H, AS, QS' ];
-console.log(arr[0]);
+let obj = {};
+let firstName = `Ivan`
+let city = `varna`;
+obj[firstName] = city;
+
+delete obj[firstName]
+console.log(obj);
 
