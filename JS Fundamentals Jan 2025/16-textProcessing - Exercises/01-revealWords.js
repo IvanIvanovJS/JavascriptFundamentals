@@ -3,9 +3,6 @@ function revealWords(words, sentence) {
         .split(`, `)
         .sort((a, b) => b.length - a.length);
 
-
-    console.log(wordsArr);
-
     for (let word of wordsArr) {
         let wordLength = word.length;
         let pattern = "*".repeat(wordLength);
