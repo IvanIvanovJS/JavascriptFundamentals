@@ -1,4 +1,2 @@
-let num = [];
-
-
+let num = 5
 
