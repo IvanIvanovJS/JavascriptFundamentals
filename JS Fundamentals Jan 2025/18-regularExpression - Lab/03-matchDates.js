@@ -1,3 +1,4 @@
+// @ts-nocheck
 function matchDates(arr) {
     let str = arr.shift();
     let pattern = /(?<day>[\d]{2})(?<separator>\.|-|\/)(?<month>[A-Z][a-z]{2})\k<separator>(?<year>[\d]{4})/g
