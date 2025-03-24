@@ -1,3 +1,4 @@
+// @ts-nocheck
 function starEnigma(arr) {
     let planetsCount = +arr.shift();
     let starPatern = /[star]/gi
