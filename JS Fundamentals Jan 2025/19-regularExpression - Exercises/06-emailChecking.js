@@ -1,5 +1,5 @@
 function emailChecking(str) {
-    let pattern = /^[A-Za-z0-9]+\.*[\w.-]+@[a-z-]+\.[a-z-]+\.*[a-z-]*/g;
+    let pattern = /^[A-Za-z0-9]+\.*[\w.-]+@[a-z-]+\.[a-z-]+\.?[a-z-]+/g;
     let arr = str.split(` `);
     for (let element of arr) {
         let match = element.match(pattern);
