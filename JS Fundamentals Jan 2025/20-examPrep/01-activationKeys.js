@@ -10,7 +10,7 @@ function activationKeys(arr) {
             let substring = instruction[1];
 
             if (str.includes(substring)) {
-                console.log(`${rawActivationKey} contains ${substring}`);
+                console.log(`${str} contains ${substring}`);
 
             } else {
                 console.log(`Substring not found!`);
