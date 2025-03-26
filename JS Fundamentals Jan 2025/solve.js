@@ -1,8 +1,7 @@
-let str = `swra`;
+let str = `biggestpointmanpoint`;
 let test = str.includes("wr");
-if (test) {
-    console.log(str);
+let go = str.replace(`point`, ``)
+console.log(go);
 
-}
 
 
