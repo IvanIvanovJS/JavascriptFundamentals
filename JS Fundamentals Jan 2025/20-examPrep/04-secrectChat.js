@@ -27,7 +27,6 @@ function secretChat(arr) {
             }
         } else if (command === `ChangeAll`) {
             let [substring, replacement] = tokens;
-            console.log(typeof text);
 
             text = text.split(substring).join(replacement)
 
