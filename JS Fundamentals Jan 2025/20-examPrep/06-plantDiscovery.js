@@ -67,7 +67,7 @@ function plantDiscovery(arr) {
 
 
     }
-    console.log(plantCount.get(`Woodii`));
+
 
 }
 plantDiscovery(["3",
