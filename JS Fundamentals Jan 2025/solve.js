@@ -1,6 +1,6 @@
-let obj = { a: 1, b: 2, c: 3 };
+let abv = new Map();
 
+abv.set(`key`, `value`);
+abv.delete(`key`)
+console.log(abv);
 
-
-delete obj['b'];
-console.log(obj);
