@@ -12,7 +12,5 @@ function aggregateElements(arr) {
     console.log(inverseSum);
     console.log(concatSum);
 
-
-
 }
 aggregateElements([2, 4, 8, 16])

@@ -1,4 +1,2 @@
-let a = 0.4;
-let b = 0.2 + 0.2;
-console.log(a == b);
-
+let ab = 219.12;
+console.log((ab % 60));
