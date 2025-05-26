@@ -1,2 +1,12 @@
-let ab = 219.12;
-console.log((ab % 60));
+function solve(arr) {
+    for (let row = 0; row < arr.length; row++) {
+        let check = arr[row].filter(num => num === 4);
+        console.log(check);
+    }
+
+
+}
+solve([[4, 4, 4],
+[6, 5, 4],
+[5, 5, 5]]
+)
