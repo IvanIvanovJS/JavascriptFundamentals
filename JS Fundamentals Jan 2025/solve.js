@@ -1,12 +1,14 @@
-function solve(arr) {
-    for (let row = 0; row < arr.length; row++) {
-        let check = arr[row].filter(num => num === 4);
-        console.log(check);
-    }
+function escapeHTML(value) {
+    let pattern = /[<>& ]/g;
+    value = String(value);
+    return value.replace(pattern, (match) => ({
 
-
+        '<': '&lt;',
+        '>': '&gt;',
+        '&': '&amp;',
+        ' ': '&nbsp;'
+    }[match]))
 }
-solve([[4, 4, 4],
-[6, 5, 4],
-[5, 5, 5]]
-)
+
+console.log(escapeHTML('[{"Name":"<script>alert(\'Hacked\');\<\/script>", "Age":20, "City":"\'Vinkel Town\' Pernik & Co."}]'));
+// Очаквано: "&lt;div&gt;&nbsp;Hello&nbsp;&amp;&nbsp;welcome&nbsp;&lt;/div&gt;"

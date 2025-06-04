@@ -53,9 +53,6 @@ function spiralMatrix(x, y) {
                         counter++
                     }
 
-                    // if (matrix[row][col - 1] !== 0) {
-                    //     break;
-                    // }
                 }
 
                 for (row; row > 0; row--) {
@@ -74,20 +71,10 @@ function spiralMatrix(x, y) {
                     }
 
                 }
-                //32
 
-
-
-                //if matrix row !== 0 continnue or try col
             }
 
-
-
-
-
-
         }
-
 
         if (!matrix.flat().includes(0)) {
             return matrix.forEach(el => console.log(el.join(` `)));
@@ -97,4 +84,4 @@ function spiralMatrix(x, y) {
     matrix.forEach(el => console.log(el.join(` `)));
 
 }
-spiralMatrix(8, 8)
+spiralMatrix(15, 15)
