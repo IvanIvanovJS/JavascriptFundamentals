@@ -1,14 +1,19 @@
-function escapeHTML(value) {
-    let pattern = /[<>& ]/g;
-    value = String(value);
-    return value.replace(pattern, (match) => ({
+var myList = result();
+expect(myList.hasOwnProperty('size')).to.equal(true, "Property size was not found");
 
-        '<': '&lt;',
-        '>': '&gt;',
-        '&': '&amp;',
-        ' ': '&nbsp;'
-    }[match]))
+// Generate random list of 20 numbers
+var expectedArray = [];
+for (let i = 0; i < 20; i++) {
+    expectedArray.push(Math.floor(Math.random() * 200) - 100);
 }
-
-console.log(escapeHTML('[{"Name":"<script>alert(\'Hacked\');\<\/script>", "Age":20, "City":"\'Vinkel Town\' Pernik & Co."}]'));
-// Очаквано: "&lt;div&gt;&nbsp;Hello&nbsp;&amp;&nbsp;welcome&nbsp;&lt;/div&gt;"
+// Add to collection
+for (let i = 0; i < expectedArray.length; i++) {
+    myList.add(expectedArray[i]);
+}
+expect(myList.size).to.equal(20, "Elements weren't added");
+// Sort array
+expectedArray.sort((a, b) => a - b);
+// Compare with collection
+for (let i = 0; i < expectedArray.length; i++) {
+    expect(myList.get(i)).to.equal(expectedArray[i], "Array wasn't sorted");
+}
